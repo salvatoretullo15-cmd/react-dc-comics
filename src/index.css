@@ -1,9 +1,15 @@
 @import url("bootstrap");
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 header{
 
     img{
-        width: 5rem;
+        width: 3rem;
+        margin-top: 1rem;
     }
     
     nav{
@@ -22,6 +28,41 @@ header{
             color: rgb(0, 119, 255);
             text-decoration: underline;
           }
+        }
+    }
+}
+
+main{
+    background-color: rgba(0, 0, 0, 0.877);
+
+    p{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        font-weight: 500;
+    }
+
+    .blu-bar{
+        display: flex;
+        justify-content:center;
+        gap: 2rem;
+        background-color: rgb(0, 119, 255);
+
+        img{
+          max-width: 2.5rem;
+          max-height: 10%;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        button{
+          color: rgb(255, 255, 255);
+          font-size: 1rem;
+          font-weight:100;
+          background: none;
+          border: none;
+          cursor: pointer;
         }
     }
 }
