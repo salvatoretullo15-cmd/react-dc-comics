@@ -37,7 +37,7 @@ export default function AppMain(){
           DC K.O.: Un evento cosmico strutturato come un torneo che coinvolge i principali eroi dell'universo DC, presentato durante il Comic-Con 2025. 
           <h2>I Pilastri della DC</h2>
           L'universo DC continua a ruotare attorno alla Justice League, 
-          i cui membri principali sono: 
+          i cui membri principali sono:<br/> 
           Superman: Considerato l'eroe più forte e simbolo di speranza.<br/>
           Batman: Il detective di Gotham City, protagonista di saghe 
           come Hush 2 prevista per il 2025.<br/>
