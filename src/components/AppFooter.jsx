@@ -6,8 +6,8 @@ export default function AppFooter(){
       <div className="container">
           <div className="row">
             <div className="col">
-              <h3>DC COMICS</h3>
               <ul className="list unstyled">
+                <h3>DC COMICS</h3>
                 <li>
                   <a href="">Characters</a>
                 </li>
@@ -30,8 +30,8 @@ export default function AppFooter(){
                   <a href="">News</a>
                 </li>
               </ul>
-              <h3>SHOP</h3>
               <ul className="list unstyled">
+                <h3>SHOP</h3>
                 <li>
                   <a href="">Shop DC</a>
                 </li>
@@ -41,8 +41,8 @@ export default function AppFooter(){
               </ul>
             </div>
             <div className="col">
-              <h3>DC</h3>
               <ul className="list unstyled">
+                <h3>DC</h3>
                 <li>
                   <a href="">Term Of Use</a>
                 </li>
@@ -79,8 +79,8 @@ export default function AppFooter(){
               </ul>
             </div>
             <div className="col">
-              <h3>SITES</h3>
               <ul className="list unstyled">
+                <h3>SITES</h3>
                 <li>
                   <a href="">DC</a>
                 </li>
@@ -98,6 +98,7 @@ export default function AppFooter(){
                 </li>
               </ul>
             </div>
+            <img className="imgDC"src="/public/dc-logo-bg.png" alt="DC Logo" />
           </div>
       </div>
     </footer>

@@ -3,7 +3,8 @@ export default function AppHeader(){
 
   return (
     <header>
-      <nav>
+      <div className="container">
+         <nav>
           <img src="/public/dc-logo.png" alt="DC Logo" /> 
           <a href="">CHARACTERS</a>
           <a href="" className="active">COMICS</a>
@@ -15,7 +16,8 @@ export default function AppHeader(){
           <a href="">FANS</a>
           <a href="">NEWS</a>
           <a href="">SHOP</a>
-      </nav>
+         </nav>
+      </div>
     </header>
   )
 }
