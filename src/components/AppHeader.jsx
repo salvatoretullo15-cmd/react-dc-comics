@@ -3,21 +3,23 @@ export default function AppHeader(){
 
   return (
     <header>
-      <div className="container">
-         <nav>
-          <img src="/public/dc-logo.png" alt="DC Logo" /> 
-          <a href="">CHARACTERS</a>
-          <a href="" className="active">COMICS</a>
-          <a href="">MOVIES</a>
-          <a href="">TV</a>
-          <a href="">GAMES</a>
-          <a href="">COLLECTIBLES</a>
-          <a href="">VIDEOS</a>
-          <a href="">FANS</a>
-          <a href="">NEWS</a>
-          <a href="">SHOP</a>
-         </nav>
-      </div>
+        <div className="container">
+          <nav className="navbar navbar-expand-lg">
+            <img src="dc-logo.png" alt="DC logo" />
+              <div className="container d-flex justify-content-end gap-3">
+                <a className="nav-link" href="#">CHARACTERS</a>               
+                <a className="active" href="#">COMICS</a>               
+                <a className="nav-link" href="#">MOVIES</a>              
+                <a className="nav-link" href="#">TV</a>              
+                <a className="nav-link" href="#">GAMES</a>              
+                <a className="nav-link" href="#">COLLECTIBLES</a>              
+                <a className="nav-link" href="#">VIDEOS</a>              
+                <a className="nav-link" href="#">FANS</a>             
+                <a className="nav-link" href="#">NEWS</a>            
+                <a className="nav-link" href="#">SHOP</a>            
+              </div>                  
+          </nav>
+        </div>
     </header>
   )
 }

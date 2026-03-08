@@ -101,6 +101,19 @@ export default function AppFooter(){
             <img className="imgDC"src="/public/dc-logo-bg.png" alt="DC Logo" />
           </div>
       </div>
+      <div className="social">
+          <div className="container d-flex">
+                <button className="btn text-white">SIGN-UP NOW!</button>
+              <div className="app d-flex justify-content-end align-items-center">
+                <a href className="follow">FOLLOW US</a>
+                <img src="/public/footer-facebook.png" alt="Facebook Logo" />
+                <img src="/public/footer-twitter.png" alt="Twitter Logo" />
+                <img src="/public/footer-youtube.png" alt="YouTube Logo" />
+                <img src="/public/footer-pinterest.png" alt="Pinterest Logo" />
+                <img src="/public/footer-periscope.png" alt="Periscope Logo" />
+              </div>
+          </div>
+      </div>
     </footer>
   )
 }

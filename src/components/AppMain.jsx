@@ -45,17 +45,27 @@ export default function AppMain(){
           Altri membri: Flash, Lanterna Verde, Aquaman, Cyborg e Martian Manhunter. 
         </p>
       </div>
-        <div className="blu-bar">
-          <img src="/public/buy-comics-digital-comics.png" alt="" />
-          <button>DIGITAL COMICS</button>
-          <img src="/public/buy-comics-merchandise.png" alt="" />
-          <button>DC MERCHANDISE</button>
-          <img src="/public/buy-comics-subscriptions.png" alt="" />
-          <button>SUBSCRIPTION</button>
-          <img src="/public/buy-comics-shop-locator.png" alt="" />
-          <button>COMIC SHOP LOCATOR</button>
-          <img src="/public/buy-dc-power-visa.svg" alt="" />
-          <button>DC POWER VISA</button>
+        <div className="blueBar d-flex justify-content-center align-items-center">
+              <img src="/public/buy-comics-digital-comics.png" alt="" />
+            <button>
+              DIGITAL COMICS
+            </button>
+              <img src="/public/buy-comics-merchandise.png" alt="" />
+            <button>
+              DC MERCHANDISE
+            </button>          
+              <img src="/public/buy-comics-subscriptions.png" alt="" />
+            <button>
+              SUBSCRIPTION
+            </button>         
+              <img src="/public/buy-comics-shop-locator.png" alt="" />
+            <button>
+              COMIC SHOP LOCATOR
+            </button>                  
+              <img src="/public/buy-dc-power-visa.svg" alt="" />
+            <button>
+              DC POWER VISA
+            </button>       
         </div>
     </main>
   )
