@@ -200,13 +200,13 @@ return (
                 <div className="card mt-4">
                   <img src={comic.thumb} className="imagine rounded-0" alt={comic.title} />
                 </div>
-                  <h2 className="text">{comic.series}</h2>
+                  <h2 className="text mt-3">{comic.series}</h2>
               </div>
           ))
           }
         </div>
         <div className="d-flex justify-content-center mt-4 mb-4">
-          <button className="btn btn-primary fs-6 fw-bolder rounded-0">
+          <button className="btn btn-primary fs-6 fw-bolder rounded-0 ps-5 pe-5">
               LOAD MORE
           </button>
         </div>

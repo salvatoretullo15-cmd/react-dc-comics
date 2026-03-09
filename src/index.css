@@ -55,6 +55,11 @@ img {
     width: 100%;
 }
 
+.greyBar{
+    width: 100%;
+    height: 100px;
+}
+
 .siti{
     justify-content:center;
     align-items:center;
