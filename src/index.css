@@ -32,22 +32,6 @@ main{
     display:flex;
     flex-direction: column;
     
-    p{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        color: white;
-        font-weight: 500;
-        
-        h1{
-            color: crimson;
-        }
-            
-        h2{
-            color: crimson;
-        }
-
-    }
 
     .blueBar{
         
