@@ -45,27 +45,44 @@ export default function AppMain(){
           Altri membri: Flash, Lanterna Verde, Aquaman, Cyborg e Martian Manhunter. 
         </p>
       </div>
-        <div className="blueBar d-flex justify-content-center align-items-center">
-              <img src="/public/buy-comics-digital-comics.png" alt="" />
-            <button>
-              DIGITAL COMICS
-            </button>
-              <img src="/public/buy-comics-merchandise.png" alt="" />
-            <button>
-              DC MERCHANDISE
-            </button>          
-              <img src="/public/buy-comics-subscriptions.png" alt="" />
-            <button>
-              SUBSCRIPTION
-            </button>         
-              <img src="/public/buy-comics-shop-locator.png" alt="" />
-            <button>
-              COMIC SHOP LOCATOR
-            </button>                  
-              <img src="/public/buy-dc-power-visa.svg" alt="" />
-            <button>
-              DC POWER VISA
-            </button>       
+      
+        <div className="blueBar row">
+              <figure className="figure d-flex justify-content-center align-items-center gap-3">
+                  <img src="/public/buy-comics-digital-comics.png" className="figure_img" alt="Digital Comics" />
+                    <figcaption className="figure-caption col-md-1">
+                      <button>
+                      DIGITAL COMICS
+                      </button>
+                    </figcaption>
+              
+                  <img src="/public/buy-comics-merchandise.png" className="figure_img" alt="DC Merchandise" />
+                    <figcaption className="figure-caption col-md-1">
+                      <button>
+                      DC MERCHANDISE
+                      </button>
+                    </figcaption>
+             
+                  <img src="/public/buy-comics-subscriptions.png" className="figure_img" alt="SUBSCRIPTIONS" />
+                    <figcaption className="figure-caption col-md-1">
+                      <button>
+                      SUBSCRIPTIONS
+                      </button>
+                    </figcaption>
+              
+                  <img src="/public/buy-comics-shop-locator.png" className="figure_img" alt="COMIC SHOP LOCATOR" />
+                    <figcaption className="figure-caption col-md-1">
+                      <button>
+                      COMIC SHOP LOCATOR
+                      </button>
+                    </figcaption>
+              
+                  <img src="/public/buy-dc-power-visa.svg" className="figure_img" alt="DC POWER VISA" />
+                    <figcaption className="figure-caption col-md-1">
+                      <button>
+                      DC POWER VISA
+                      </button>
+                    </figcaption>
+              </figure>     
         </div>
     </main>
   )

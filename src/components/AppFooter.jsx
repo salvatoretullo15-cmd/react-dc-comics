@@ -5,7 +5,7 @@ export default function AppFooter(){
     <footer> 
       <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-md-2">
               <ul className="list unstyled">
                 <h3>DC COMICS</h3>
                 <li>
@@ -40,7 +40,7 @@ export default function AppFooter(){
                 </li>
               </ul>
             </div>
-            <div className="col">
+            <div className="col-md-2">
               <ul className="list unstyled">
                 <h3>DC</h3>
                 <li>
@@ -78,7 +78,7 @@ export default function AppFooter(){
                 </li>
               </ul>
             </div>
-            <div className="col">
+            <div className="col-md-2">
               <ul className="list unstyled">
                 <h3>SITES</h3>
                 <li>
@@ -98,7 +98,6 @@ export default function AppFooter(){
                 </li>
               </ul>
             </div>
-            <img className="imgDC"src="/public/dc-logo-bg.png" alt="DC Logo" />
           </div>
       </div>
       <div className="social">
