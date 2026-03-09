@@ -155,62 +155,76 @@ export default function AppMain(){
   },
 ];
 
-  return (
-    <main> 
-      <div className="container">
-        <div className="row">
-          {
-            comics.map(comic => (
-              <div className="col">
-                <div className="card rounded-0 h-100">
-                  <img className="card-img-top" src={comic.thumb} alt="comic book cover" />
-                  <div className="card-body">
-                    <h2>{comic.title}</h2>
-                  </div>
+const links = [
+{
+  id:1,
+  img:"/public/buy-comics-digital-comics.png",
+  text:"DIGITAL COMICS",
+},
+{
+  id:2,
+  img:"/public/buy-comics-merchandise.png",
+  text:"DC MERCHANDISE",
+},
+{
+  id:3,
+  img:"/public/buy-comics-subscriptions.png",
+  text:"SUBSCRIPTION",
+},
+{
+  id:4,
+  img:"/public/buy-comics-shop-locator.png",
+  text:"COMIC SHOP LOCATOR",
+},
+{
+  id:5,
+  img:"/public/buy-dc-power-visa.svg",
+  text:"DC POWER VISA",
+}
+];
+
+return (
+    <main className="bg-dark"> 
+      <div className="jumbotron">
+        <img src="jumbotron.jpg" alt="" />
+      </div>
+      <div className="container d-flex flex-column">
+        <div className="d-flex justify-content-start">
+            <button className="btn btn-primary fs-3 fw-bolder rounded-0">
+              CURRENT SERIES
+            </button>
+        </div>
+          <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+            {comics.map((comic) => (
+              <div className="col" key={comic.id}>
+                <div className="card mt-4">
+                  <img src={comic.thumb} className="imagine rounded-0" alt={comic.title} />
                 </div>
+                  <h2 className="text">{comic.series}</h2>
               </div>
-            ))
+          ))
           }
         </div>
+        <div className="d-flex justify-content-center mt-4 mb-4">
+          <button className="btn btn-primary fs-6 fw-bolder rounded-0">
+              LOAD MORE
+          </button>
+        </div>
       </div>
-      
-        <div className="blueBar row">
-              <figure className="figure d-flex justify-content-center align-items-center gap-3">
-                  <img src="/public/buy-comics-digital-comics.png" className="figure_img" alt="Digital Comics" />
-                    <figcaption className="figure-caption col-md-1">
-                      <button>
-                      DIGITAL COMICS
-                      </button>
-                    </figcaption>
-              
-                  <img src="/public/buy-comics-merchandise.png" className="figure_img" alt="DC Merchandise" />
-                    <figcaption className="figure-caption col-md-1">
-                      <button>
-                      DC MERCHANDISE
-                      </button>
-                    </figcaption>
-             
-                  <img src="/public/buy-comics-subscriptions.png" className="figure_img" alt="SUBSCRIPTIONS" />
-                    <figcaption className="figure-caption col-md-1">
-                      <button>
-                      SUBSCRIPTIONS
-                      </button>
-                    </figcaption>
-              
-                  <img src="/public/buy-comics-shop-locator.png" className="figure_img" alt="COMIC SHOP LOCATOR" />
-                    <figcaption className="figure-caption col-md-1">
-                      <button>
-                      COMIC SHOP LOCATOR
-                      </button>
-                    </figcaption>
-              
-                  <img src="/public/buy-dc-power-visa.svg" className="figure_img" alt="DC POWER VISA" />
-                    <figcaption className="figure-caption col-md-1">
-                      <button>
-                      DC POWER VISA
-                      </button>
-                    </figcaption>
-              </figure>     
+        <div className="blueBar bg-primary mt-4">
+          <div className="container">
+            <div className="siti row g-4">
+              {links.map((link) => (
+                <div className="col" key={link.id}>
+                  <div className="mt-4 mb-4">
+                    <img src={link.img} className="imagine2 rounded-0" alt="#"/>
+                    <span className="text2 text-center ps-3">{link.text}</span>
+                  </div>
+                </div>
+              ))
+              }
+            </div>
+          </div>
         </div>
     </main>
   )
