@@ -1,33 +1,11 @@
+import AppIcone from "./AppIcone";
 export default function AppFooter(){
-
-const contacts = [
-{
-  id:1,
-  img:"/public/footer-facebook.png",
-},
-{
-  id:2,
-  img:"/public/footer-twitter.png",
-},
-{
-  id:3,
-  img:"/public/footer-youtube.png",
-},
-{
-  id:4,
-  img:"/public/footer-pinterest.png",
-},
-{
-  id:5,
-  img:"/public/footer-periscope.png",
-}
-];
 
 return (
     <footer> 
-      <div>
-          <div className="container text-white d-flex">
-            <ul className="list">
+      <div className="d-flex row">
+          <div className="container row row-cols-md-2 row-cols-lg-3 text-white d-flex">
+            <ul className="col list mt-3">
                 <li>
                   <h2 className="fs-3">DC COMICS</h2>
                   <p className ="text-secondary">Character</p>
@@ -39,12 +17,12 @@ return (
                   <p className ="text-secondary">News</p>
                 </li>
                 <li>
-                  <h2 className="fs-3">SHOP</h2>
+                  <h2 className="fs-3 mt-5">SHOP</h2>
                   <p className ="text-secondary">Shop Dc</p>
                   <p className ="text-secondary">Shop DC Collectibles</p>
                 </li>
             </ul>
-            <ul className="list">
+            <ul className="col list mt-3">
                 <li>
                   <h2 className="fs-3">DC</h2>
                   <p className ="text-secondary">Terms of us</p>
@@ -60,7 +38,7 @@ return (
                   <p className ="text-secondary">Contact us</p>
                 </li>
             </ul>
-            <ul className="list">
+            <ul className="col list mt-3">
                 <li>
                   <h2 className="fs-3">SITES</h2>
                   <p className ="text-secondary">DC</p>
@@ -71,20 +49,15 @@ return (
                 </li>
             </ul>
           </div>
-          <div className="greyBar bg-dark pt-4">
+          <div className="greyBar d-flex bg-dark">
             <div className="container d-flex align-items-center justify-content-between">
-              <button className="btn btn-primary rounded-0 text-white">
-                SIGN-UP NOW
-              </button>
-              <div className="d-flex align-items-center gap-3"> 
-                <span className="text-primary fw-bold mb-0">
-                  FOLLOW US
-                </span>
-                {contacts.map((contact) => (
-                <img key={contact.id} src={contact.img} alt="social" />
-                ))
-                }
-              </div>
+              
+                  <button className="btn btn-primary rounded-0 text-white">
+                    SIGN-UP NOW
+                  </button>
+                
+                  <AppIcone />
+                
             </div>
           </div>
       </div>

@@ -1,6 +1,7 @@
+import AppCard from "./AppCard"
 export default function AppMain(){
 
-  const comics = [
+const comics = [
   {
     id: 1,
     title: "Action Comics #1000: The Deluxe Edition",
@@ -195,16 +196,10 @@ return (
             </button>
         </div>
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
-            {comics.map((comic) => (
-              <div className="col" key={comic.id}>
-                <div className="card mt-4">
-                  <img src={comic.thumb} className="imagine rounded-0" alt={comic.title} />
-                </div>
-                  <h2 className="text mt-3">{comic.series}</h2>
-              </div>
-          ))
-          }
-        </div>
+            {comics.map(comic=>(
+              <AppCard thumb={comic.thumb} series={comic.series} key={comic.id}/>
+            ))}
+         </div>
         <div className="d-flex justify-content-center mt-4 mb-4">
           <button className="btn btn-primary fs-6 fw-bolder rounded-0 ps-5 pe-5">
               LOAD MORE
@@ -212,8 +207,8 @@ return (
         </div>
       </div>
         <div className="blueBar bg-primary mt-4">
-          <div className="container">
-            <div className="siti row g-4">
+          <div className="container d-flex">
+            <div className="siti row row-cols-2 row-cols-md-5 g-4">
               {links.map((link) => (
                 <div className="col" key={link.id}>
                   <div className="mt-4 mb-4">
