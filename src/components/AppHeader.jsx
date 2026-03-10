@@ -16,7 +16,7 @@ export default function AppHeader(){
                   <a className="nav-link" href="#">CHARACTERS</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">COMICS</a>
+                  <a className="striscia nav-link text-primary" href="#">COMICS</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">MOVIES</a>
